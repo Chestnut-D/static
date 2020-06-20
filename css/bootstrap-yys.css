@@ -1,0 +1,247 @@
+body {
+    font-family: "Microsoft Yahei";
+}
+
+.ss-icon {
+    background: rgb(248, 147, 56);
+    color: white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    margin-right: 20px;
+}
+.cg-icon {
+    background: rgb(248, 147, 56);
+    color: white;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 32px;
+    margin-right: 20px;
+}
+
+/* 导航 */
+.navbar-default {
+    background-color: #ffffff;
+    border: none;
+    box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.5);
+}
+
+.navbar-default .navbar-brand {
+    height: 80px;
+}
+
+.navbar-default .navbar-nav>li>a {
+    font-size: 18px;
+    font-weight: bold;
+    height: 70px;
+    line-height: 50px;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #ff4500;
+}
+
+.navbar-default .navbar-toggle:hover {
+    border-color: #ff4500;
+    background-color: white;
+}
+
+.navbar-toggle {
+    margin-top: 17px;
+}
+
+/* home */
+#home {
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/60.jpg');
+    background-size: cover;
+}
+
+#home h1 {
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+
+#home p {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 30px;
+    margin-bottom: 50px;
+}
+
+#home img {
+    margin-top: 150px;
+    display: inline-block;
+}
+
+/* yys */
+#yys {
+    padding: 60px 0 60px 0;
+    text-align: center;
+    border-bottom: 1px solid #f89338;
+}
+
+#yys .col-md-3 {
+    padding: 10px;
+}
+
+/* ":hover" 前面要注意有没有加空格，加了空格，就是这层里面的所有东西的样式，而不是这层的样式*/
+#yys .col-md-3:hover {
+    box-shadow: 1px 1px 4px #f89338;
+}
+
+#yys a {
+    color: black;
+    text-decoration: none;
+}
+
+#yys img {
+    margin: 0 auto;
+}
+
+#yys h3,h4 {
+    font-weight: bold;
+}
+
+/* ss */
+#ss {
+    padding: 60px 0;
+    border-bottom: 1px solid #f89338;
+    line-height: 25px;
+}
+
+#ss h2 {
+    font-weight: bold;
+    margin-top: 0px;
+}
+
+
+/* yh */
+#yh {
+    background: #ffffff;
+    padding: 60px 0;
+    text-align: center;
+    border-bottom: 1px solid #f89338;
+    }
+
+#yh h2 {
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+#yh .col-md-2 {
+    margin-top: 30px;
+}
+
+#yh .yh {
+    background: white;
+    border-radius: 5px;
+    border: 1px solid #f89338;
+}
+
+.yh .btn {
+    background: transparent;
+    border: 1px solid #f89338;
+    color: #f89338;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px 30px;
+    transition: all .3s;
+}
+
+.yh .btn-primary:hover {
+    background: #f89338;
+    color: white;
+}
+#yh .col-md-2 .yh:hover {
+    box-shadow: 1px 2px 5px #f89338;
+}
+/* xz */
+#xz {
+    padding: 60px 0;
+    border-bottom: 1px solid #f89338;
+}
+
+#xz h2 {
+    font-weight: bold;
+    margin-top: 0px;
+}
+
+#xz {
+    line-height: 30px;
+}
+
+#xz .btn {
+    background: transparent;
+    border: 1px solid #f89338;
+    color: #f89338;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 16px;
+    padding: 10px 50px;
+    transition: all .3s;
+}
+
+#xz .btn-primary:hover {
+    background: #f89338;
+    color: white;
+}
+
+/* contact */
+#contact{
+    background: url('../img/contect.png');
+    background-size: cover;
+    color: #ffffff;
+    border-bottom: 1px solid #f89338;
+}
+.lvjing {
+    width: 100%;
+    height: 100%;
+    /* background: rgba(107, 105, 105, 0.363); */
+    padding: 60px 0;
+}
+#contact h2{
+    font-weight: bold;
+    margin-bottom: 25px;
+    margin-top: 0px;
+}
+#contact p{
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+#contact .form-control {
+    height: 50px;
+    margin-bottom: 20px;
+}
+#contact textarea.form-control{
+    height: auto;
+}
+#contact input[type='submit']{
+    background: #fff;
+    color: #524e4e;
+    font-weight: bold;
+    border: 1px solid #f89338;
+}
+#contact input[type='submit']:hover{
+    box-shadow: 0px 5px 10px rgba(255, 255, 255, 0.815);
+    border: 1px solid #fff;
+    transition: all .3s;
+    background: #f89338;
+    color: #fff;
+}
+/* footer */
+footer{
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
