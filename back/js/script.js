@@ -171,3 +171,48 @@ var ctx = document.getElementById("doughnut-graph").getContext("2d");
         responsive : true
     });  
 */
+
+
+// msg 留言
+var enterMsg = document.getElementById('enterMsg');
+var sendMsg = document.getElementById('sendMsg');
+var msgList = document.getElementById('messageList');
+var votes = 1; //统计留言条数
+
+sendMsg.onclick = function () {
+    var msg = enterMsg.value;
+    if (msg.match(/^[ ]*$/)) {
+        alert('您还没有输入内容哦！');
+        return;
+    }
+    new createDiv(msg, msgList);
+    votes++;
+    enterMsg.value = '';
+    //msg = ''; //把enterMsg的value值保存下来后，msg只是一个副本，与enterMsg没有关系
+    document.getElementById('votes').innerHTML = votes;
+};
+
+function createDiv(obj, el) {
+    this.div = document.createElement('div');
+    this.div.className = 'singleMsg';
+    this.p1 = document.createElement('p');
+    this.p1.innerHTML = obj;
+    this.p2 = document.createElement('p');
+    this.p2.className = 'delete';
+    this.p2.innerHTML = '删除';
+
+    this.div.appendChild(this.p1);
+    this.div.appendChild(this.p2);//向div中追加节点
+
+    el.insertBefore(this.div, el.childNodes[0]);//插入节点
+
+    var that = this;
+    this.p2.onclick = function () {
+        that.div.remove();
+        if (votes <= 1) {
+            votes = 1;
+        }
+        votes--;
+        document.getElementById('votes').innerHTML = votes;
+    };
+}

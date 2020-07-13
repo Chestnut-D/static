@@ -56,6 +56,7 @@ body {
 
 /* home */
 #home {
+    margin-top: 80px;
     color: white;
     text-align: center;
     width: 100%;
@@ -63,23 +64,9 @@ body {
     background-image: url('../img/60.jpg');
     background-size: cover;
 }
-
-#home h1 {
-    font-weight: bold;
-    margin-top: 30px;
-    margin-bottom: 25px;
-}
-
-#home p {
-    font-size: 15px;
-    font-weight: 300;
+#home .theme {
+    margin: 320px 0 50px 0;
     line-height: 30px;
-    margin-bottom: 50px;
-}
-
-#home img {
-    margin-top: 150px;
-    display: inline-block;
 }
 
 /* yys */
