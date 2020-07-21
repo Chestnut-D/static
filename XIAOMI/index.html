@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -7,13 +7,14 @@
     <title>小米商城 - 小米10 Pro、Redmi 10X、小米MIX Alpha，小米电视网站</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="lb.css">
 </head>
 
 <body>
     <!-- 快捷导航--开始 -->
     <div class="headerbox">
-        <div class="quicknavigation w">
-            <div class="boxleft" id="head">
+        <div class="container" id="backhead">
+            <div class="boxleft">
                 <ul>
                     <li><a href="#">小米商城</a></li>
                     <li><span>|</span></li>
@@ -42,6 +43,11 @@
                     <li><a href="#">Select Location</a></li>
                 </ul>
             </div>
+            <div class="shopping">
+                <a href="#">
+                    <span class="iconfont">&#xe63b;</span>购物车（99）
+                </a>
+            </div>
             <div class="boxright">
                 <ul>
                     <li><a href="#">登录</a></li>
@@ -50,14 +56,7 @@
                     <li><span>|</span></li>
                     <li><a href="#">消息通知</a></li>
                 </ul>
-            </div>
-            <div class="shopping">
-                <a href="#">
-                    <span class="iconfont">&#xe63b;</span>
-                    购物车（99）
-
-                </a>
-            </div>
+            </div>  
         </div>
     </div>
     <!-- 快捷导航--结束 -->
@@ -88,39 +87,66 @@
     <!-- 头部--结束-->
 
     <!-- 导航栏--开始 -->
-    <div class="w thenavigationbar">
-        <ul>
-            <li><a href="#">手机 电话卡</a><span class="iconfont">&#xe658;</span></li>
-            <li><a href="#">电视 盒子</a><span class="iconfont">&#xe658;</span></li>
-            <li><a href="#">笔记本 显示器 平板</a><span class="iconfont">&#xe658;</span></li>
-            <li><a href="#">家电 插线板</a><span class="iconfont">&#xe658;</span></li>
-            <li><a href="#">出行 穿戴</a><span class="iconfont">&#xe658;</span></li>
-            <li><a href="#">智能 路由器</a><span class="iconfont">&#xe658;</span></li>
-            <li><a href="#">电源 配件</a><span class="iconfont">&#xe658;</span></li>
-            <li><a href="#">健康 儿童</a><span class="iconfont">&#xe658;</span></li>
-            <li><a href="#">耳机 音箱</a><span class="iconfont">&#xe658;</span></li>
-            <li><a href="#">生活 箱包</a><span class="iconfont">&#xe658;</span></li>
-        </ul>
-        <div class="banner">
+    <div class="container thenavigationbar">
+        <div>
             <ul>
-                <li><a href="#"><img src="./images/banner.png" alt=""></a></li>
+                <li><a href="#">手机 电话卡</a><span class="iconfont">&#xe658;</span></li>
+                <li><a href="#">电视 盒子</a><span class="iconfont">&#xe658;</span></li>
+                <li><a href="#">笔记本 显示器 平板</a><span class="iconfont">&#xe658;</span></li>
+                <li><a href="#">家电 插线板</a><span class="iconfont">&#xe658;</span></li>
+                <li><a href="#">出行 穿戴</a><span class="iconfont">&#xe658;</span></li>
+                <li><a href="#">智能 路由器</a><span class="iconfont">&#xe658;</span></li>
+                <li><a href="#">电源 配件</a><span class="iconfont">&#xe658;</span></li>
+                <li><a href="#">健康 儿童</a><span class="iconfont">&#xe658;</span></li>
+                <li><a href="#">耳机 音箱</a><span class="iconfont">&#xe658;</span></li>
+                <li><a href="#">生活 箱包</a><span class="iconfont">&#xe658;</span></li>
             </ul>
-            <div class="banner_button">
-                <a href="#"></a>
-                <a href="#"></a>
-                <a href="#"></a>
-                <a href="#"></a>
-                <a href="#"></a>
-            </div>
         </div>
 
-        <!-- 导航栏--结束 -->
+        <div class="lb-box banner" id="lb-1">
+            <!-- 轮播内容 -->
+            <div class="lb-content">
+                <div class="lb-item active">
+                    <a href="#">
+                        <img src="images/banner1.png" alt="picture loss">
+                    </a>
+                </div>
+                <div class="lb-item">
+                    <a href="#">
+                        <img src="images/banner2.png" alt="picture loss">
+                    </a>
+                </div>
+                <div class="lb-item">
+                    <a href="#">
+                        <img src="images/banner3.png" alt="picture loss">
+                    </a>
+                </div>
+                <div class="lb-item">
+                    <a href="#">
+                        <img src="images/banner4.png" alt="picture loss">
+                    </a>
+                </div>
+            </div>
+            <!-- 轮播标志 -->
+            <ol class="lb-sign">
+                <li class="active">1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+            </ol>
+            <!-- 轮播控件 -->
+            <div class="lb-ctrl left">＜</div>
+            <div class="lb-ctrl right">＞</div>
+        </div>
+
     </div>
+    <!-- 导航栏--结束 -->
+
     <!-- 清除浮动 -->
     <div class="clear"></div>
     <!-- 第一个模块-- 开始-->
-    <div class="hot w">
-        <div class="boxleft">
+    <div class="hot container">
+        <div class="boxleft_hot">
             <ul>
                 <li><a href="#">
                         <p><img src="./images/hot_1.png" alt=""></p>
@@ -157,7 +183,7 @@
     <!-- 第一个模块-- 结束-->
     <!-- 主体 -->
     <main class="main">
-        <div class="w">
+        <div class="container">
             <!-- 小米闪购 开始 -->
             <div class="flashsales">
                 <div class="title_one">
@@ -807,7 +833,7 @@
     <!-- 主体--结束 -->
     <!-- 底部--开始 -->
     <footer>
-        <div class="w">
+        <div class="container">
             <div class="one">
                 <a href="#">
                     <img src="./images/footer_1.jpg" alt="">预约维修服务
@@ -960,7 +986,7 @@
                 </a>
             </li>
             <li>
-                <a href="#head">
+                <a href="#backhead">
                     <span class="iconfont" title="回顶部">&#xe703;</span>
                 </a>
             </li>
@@ -968,5 +994,6 @@
     </div>
     <!-- 侧边栏--结束 -->
 </body>
+<script src="lb.js"></script>
 
 </html>
