@@ -52,6 +52,7 @@ input {
     width: 100%;
     min-width: 1266px;
 }
+
 .container {
     width: 1266px;
     margin: 0 auto;
@@ -196,26 +197,25 @@ input {
 .thenavigationbar {
     position: relative;
     height: 460px;
+    z-index: 1;
 }
 
-.thenavigationbar ul {
-    float: left;
+.thenavigationbar .menu {
+    position: absolute;
     width: 230px;
     height: 100%;
-    background-color: rgb(164, 149, 151);
+    background: rgba(50, 50, 50, 0.6);
     z-index: 100;
 }
 
-.thenavigationbar ul li {
+.thenavigationbar .menu .list {
     position: relative;
     width: 100%;
     height: 40px;
     z-index: 100;
-
-
 }
 
-.thenavigationbar ul li span {
+.thenavigationbar .menu .list span {
     position: absolute;
     line-height: 40px;
     right: 23px;
@@ -223,21 +223,22 @@ input {
     color: #fff;
 }
 
-.thenavigationbar ul li:nth-child(1) {
+.thenavigationbar .menu .list:nth-child(1) {
     margin-top: 30px;
 }
-.thenavigationbar ul li:nth-child(10) {
+
+.thenavigationbar .menu .list:nth-child(10) {
     margin-bottom: 30px;
 }
 
-.thenavigationbar ul li a {
+.thenavigationbar .menu .list a {
     padding-left: 30px;
     font-size: 14px;
     line-height: 40px;
     color: #fff;
 }
 
-.thenavigationbar ul li:hover {
+.thenavigationbar .menu .list:hover {
     background-color: rgb(255, 103, 0);
 }
 
@@ -247,15 +248,16 @@ input {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1;
+    z-index: 10;
     overflow: hidden;
 
 }
 
-.thenavigationbar .banner ul li {
+.thenavigationbar .banner .list {
     margin-top: 0;
     margin-left: 20px;
 }
+
 /* 导航栏-结束 */
 
 /* 第一个模块-- 开始 */
@@ -1732,17 +1734,10 @@ footer .four span {
 /* 轮播图 */
 .lb-box {
     float: right;
-    width: 1015px;
+    width: 1266px;
     height: 460px;
-    position: relative;
+    position: absolute;
     overflow: hidden;
-}
-
-@media (max-width:568px) {
-    .lb-box {
-        width: 76%;
-        height: 220px;
-    }
 }
 
 .lb-content {
@@ -1754,7 +1749,7 @@ footer .four span {
     width: 100%;
     height: 100%;
     display: none;
-    position: relative;
+    position: absolute;
 }
 
 .lb-item>a {
@@ -1859,7 +1854,7 @@ footer .four span {
     font-size: 50px;
     font-weight: 900;
     user-select: none;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.6);
     color: #fff;
     border-radius: 5px;
     cursor: pointer;
@@ -1872,22 +1867,97 @@ footer .four span {
     }
 }
 
-.lb-ctrl.left {
-    left: -50px;
-}
-
-.lb-ctrl.right {
-    right: -50px;
+.lb-ctrl {
+    display: none;
 }
 
 .lb-box:hover .lb-ctrl.left {
-    left: 10px;
+    left: 240px;
+    display: block;
 }
 
 .lb-box:hover .lb-ctrl.right {
+    display: block;
     right: 10px;
 }
 
 .lb-ctrl:hover {
     background-color: #000;
 }
+
+/* 二级菜单 */
+.menu_list_1 {
+    margin-top: -70px;
+}
+
+.menu_list_2 {
+    margin-top: -110px;
+}
+
+.menu_list_3 {
+    margin-top: -150px;
+}
+
+.menu_list_4 {
+    margin-top: -190px;
+}
+
+.menu_list_5 {
+    margin-top: -230px;
+}
+
+.menu_list_6 {
+    margin-top: -270px;
+}
+
+.menu_list_7 {
+    margin-top: -310px;
+}
+
+.menu_list_8 {
+    margin-top: -350px;
+}
+
+.menu_list_9 {
+    margin-top: -390px;
+}
+
+.menu_list_10 {
+    margin-top: -430px;
+}
+
+.comment_list {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 1036px;
+    height: 460px;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.2), 0px -1px 1px rgba(0, 0, 0, 0.2);
+    margin-left: 230px;
+}
+
+.thenavigationbar .menu .list .comment_list li img {
+    display: block;
+    text-align: center;
+    float: left;
+    margin: 0 10px;
+}
+
+.thenavigationbar .menu .list .comment_list li a {
+    display: block;
+    text-align: center;
+    float: left;
+    color: #000;
+    line-height: 30px;
+    padding: 30px 10px;
+}
+
+.menu .list:hover .comment_list {
+    display: block;
+}
+
+.menu .list .comment_list li a:hover {
+    color: #ff6700;
+}
+
+/* 二级菜单 */
