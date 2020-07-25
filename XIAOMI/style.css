@@ -1929,10 +1929,10 @@ footer .four span {
 .comment_list {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: #fff;
     width: 1036px;
     height: 460px;
-    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.2), 0px -1px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
     margin-left: 230px;
 }
 
